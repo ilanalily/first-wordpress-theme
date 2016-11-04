@@ -8,9 +8,14 @@
 */
 
 @import 'normalize';
+@import 'variables';
 @import 'typography';
+@import 'home';
 @import 'navigation';
+@import 'about-page';
+@import 'blog';
 @import 'sidebar';
+@import 'contact';
 @import 'comments';
 @import 'footer';
 /*
@@ -25,21 +30,154 @@ img {
 
 body {
 	color: #333;
+	font-family: $bodyText;
 }
 
 .container {
-	max-width: 1200px;
+	width: 80%;
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 100;
 }
 
 .full {
 	width: 100%;
+}
+
+.main {
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin: 0;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	font-size: 10px;
+	margin: 0;
+}
+
+h5 {
+	text-transform: uppercase;
+	color: white;
+	font-weight: lighter;
+}
+
+
+
+p {
+	font-weight: lighter;
+	font-size: 12px;
+	line-height: 20px;
+	color: #46454D;
+}
+
+.page_info_header {
+	width: 100%;
+}
+.block {
+	width: 250px;
+	height: 250px;
+	position: relative;
+	margin-bottom: 150px;
+	p{
+		position: absolute;
+		left: 310px;
+	    width: 200px;
+	    top: 60%;
+		&:before {
+			content: " ";
+			width: 50px;
+			height: 1px;
+			background-color: black;
+			display: block;
+			position: absolute;
+			top: 10px;
+			left: -85px;
+		}
+	}
+	h2 {
+		position: absolute;
+		top: 50%;
+		color: white;
+		transform: translateY(-50%);
+		left: 55%;
+	}
+}
+
+.content-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	width: 60%;
+	z-index: 10;
+	padding: 50px;
+	min-height: 280px;
+	max-height: 300px;
+	position: absolute;
+}
+
+.image-box {
+	width: 60%;
+	img {
+		width: 100%;
+		min-height:340px;
+		max-height:340px;
+	}
+}
+
+.rectangle {
+	width: 250px; 
+	height:50px;
+	background-color: #E9B6B3;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-bottom: 70px;
+	&:after {
+		content: " ";
+		width: 50px;
+		height: 1px;
+		background-color: black;
+		display: block;
+		position: absolute;
+		top: 70%;
+		left: 90%;
+	}
+}
+
+
+
+// animations
+
+@keyframes bounce{
+	0% {
+		top: 15px;
+	}
+	50% {
+		top: 20px;
+	}
+	100% {
+		top: 15px;
+	}
 }
 
 

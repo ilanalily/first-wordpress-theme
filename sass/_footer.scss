@@ -1,3 +1,38 @@
 footer {
 	clear: both;
 }
+
+
+footer {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 30px;
+		img {
+			width: 50px;
+		}
+		p {
+			text-transform: uppercase;
+		}
+	}
+	ul.menu {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		li {
+			padding: 0 15px;
+			a {
+				i {
+					transition: ease all .3s;
+					color: black;
+					&:hover {
+						color: #838E86;
+						transform: scale(1.3);
+					}
+				}
+			}
+		}
+	}
+}

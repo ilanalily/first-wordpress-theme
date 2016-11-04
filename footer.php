@@ -1,6 +1,17 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <?php 
+       $custom_logo_id = get_theme_mod( 'custom_logo' );
+       $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          ?>
+    <img src="<?php echo $image[0]; ?>" alt="">
+
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_location' => 'secondary'
+    )); ?>
+
+    <p>&copy;<?php bloginfo('site_title')?> 2016. Made by Ilana Lily. Theme from wellmadepixel</p>
   </div>
 </footer>
 

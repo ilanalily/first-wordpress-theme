@@ -19,14 +19,21 @@ function theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// add option to upload logo in theme customizer
-	add_theme_support( 'custom-logo' );
+	add_theme_support( 'custom-logo', array(
+		'height' =>  100,
+		'width'       => 400,
+		'flex-height' => true,
+		'flex-width'  => true,
+		'header-text' => array( 'site-title', 'site-description' ),
+		) );
 
 
 	/* This theme uses wp_nav_menu() in one location.
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation',
+		'secondary' => 'Secondary Navigation'
 	) );
 
 	/*
@@ -139,7 +146,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Continue reading <span class="meta-nav">&rarr;</span></a>';
+	return ' <a href="'. get_permalink() . '">READ MORE </a>';
 }
 
 /**
@@ -280,4 +287,10 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+function hackeryou_featured_image_url($currentPost) {
+    $image_id = get_post_thumbnail_id($currentPost->ID);
+    $image_url = wp_get_attachment_url($image_id);
+    return $image_url;
 }
