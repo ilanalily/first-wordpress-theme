@@ -294,3 +294,6 @@ function hackeryou_featured_image_url($currentPost) {
     $image_url = wp_get_attachment_url($image_id);
     return $image_url;
 }
+
+
+
