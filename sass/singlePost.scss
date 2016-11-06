@@ -1,0 +1,37 @@
+.entry-title {
+	text-transform: uppercase;
+}
+
+.entry-meta {
+	a {
+		color: #838E86;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.entry-utility {
+	a {
+		color: #838E86;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#comments {
+	#respond {
+		.form-submit {
+			input {
+				color: #838E86;
+				background-color: transparent;
+				border: 1px solid #838E86;
+				transition: ease all .3s;
+				&:hover {
+					background-color: white;
+				}
+			}
+		}
+	}
+}

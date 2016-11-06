@@ -16,6 +16,7 @@
 @import 'blog';
 @import 'sidebar';
 @import 'contact';
+@import 'singlePost';
 @import 'comments';
 @import 'footer';
 @import 'mediaQueries';
@@ -24,6 +25,10 @@
 Default Styling
 ====================================
 */
+
+a {
+	color: #838E86;
+}
 
 img {
 	max-width: 100%;

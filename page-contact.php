@@ -17,15 +17,13 @@
         <?php $contactImage = get_field('contact_page_image') ?>
         <img src="<?php echo $contactImage['url'] ?>" alt="<?php echo $contactImage['alt'] ?>"] ?>
         <div class="contact_info">
-          <div ><?php the_field('address') ?></div>
+          <div class="address"><?php the_field('address') ?></div>
           <div class="country"><?php the_field('city_prov_country') ?></div>
-          <div><?php the_field('phone') ?></div>
-          <div><?php the_field('email') ?></div>
+          <div class="phone"><?php the_field('phone') ?></div>
+          <div class="email"><?php the_field('email') ?></div>
         </div>
-      </div>
-
-
     </div>
+   </div> 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
