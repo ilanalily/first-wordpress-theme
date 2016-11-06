@@ -8,6 +8,7 @@
 	    <h2>BLOG</h2>
 	    <p>lorem ipsum dolar etium milis</p>
 	  </div>
+	</div>
 	    <div class="blog-content">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<div class="single_post">
@@ -24,7 +25,7 @@
 	 		<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
 	 		<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 
-    	</div> <!--/.content -->
+		</div> <!--/.content -->
     </div> 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

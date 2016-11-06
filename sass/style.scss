@@ -102,11 +102,12 @@ p {
 		left: 310px;
 	    width: 200px;
 	    top: 60%;
+	    max-width: 180px;
 		&:before {
 			content: " ";
 			width: 50px;
 			height: 1px;
-			background-color: black;
+			background-color: #708090;
 			display: block;
 			position: absolute;
 			top: 10px;
