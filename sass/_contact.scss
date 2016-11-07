@@ -53,6 +53,7 @@
 .contact_info {
 	position: absolute;
 	z-index: 20;
+	color: white;
 	top: 50%;
 	transform: translateY(-50%);
 	display: flex;
@@ -62,7 +63,7 @@
 	right: 80px;
 	font-size: 12px;
 	text-transform: uppercase;
-	background-color: rgba(255, 255, 255, .8);
+	background-color: rgba(0,0,0, .5);
 	padding: 60px 30px;
 	div {
 		margin-top: 30px;
@@ -78,7 +79,7 @@
 			content: " ";
 			width: 20px;
 			height: 1px;
-			background-color: black;
+			background-color: white;
 			display: block;
 			position: absolute;
 			left: 50%;
@@ -91,7 +92,7 @@
 			content: " ";
 			width: 20px;
 			height: 1px;
-			background-color: black;
+			background-color: white;
 			display: block;
 			position: absolute;
 			left: 50%;
