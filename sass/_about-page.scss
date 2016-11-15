@@ -8,8 +8,6 @@
 			width: 100%;
 			.content-box {
 				left: 0;
-				max-height: 275px;
-				min-height: 250px;
 				position: absolute;
 				top: 10%;
 			}
@@ -80,6 +78,11 @@
 			justify-content: space-between;
 			a {
 				color: black;
+				transition: all .3s ease;
+				&:hover {
+					color: #838E86;
+					transform: scale(1.1);
+				}
 			}
 		}
 	}

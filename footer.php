@@ -11,7 +11,10 @@
       'theme_location' => 'secondary'
     )); ?>
 
-    <p>&copy;<?php bloginfo('site_title')?> 2016. Made by Ilana Lily. Theme from wellmadepixel</p>
+    <p>&copy;<?php bloginfo('site_title')?> 2016. Made by <a href="www.ilanalily.ca">Ilana Lily</a>. Theme from wellmadepixel</p>
+    <div class="back_to_top">
+      <a href="#top">back to top</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+    </div>
   </div>
 </footer>
 

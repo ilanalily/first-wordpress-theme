@@ -4,7 +4,7 @@
   $heroImage = get_field('hero_image');
 ?>
 
-<div class="hero" style="background-image:url(<?php echo $heroImage['url']; ?>)">
+<div class="hero" style="background-image:url(<?php echo $heroImage['url']; ?>)" id="hero">
     <?php $headline_logo = get_field('headline_logo'); ?>
     <img class="logo" src="<?php echo $headline_logo['url']; ?>" alt="<?php echo $headline_logo['alt']; ?>">
     <h2><?php the_field('sub_title'); ?></h2>
@@ -53,7 +53,6 @@
       <?php endwhile; ?>
       </ul>
     <?php endif; ?>
-
    </div>
 </div>
 

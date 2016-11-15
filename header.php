@@ -14,7 +14,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header id="top">
   <div class="container">
 
     <?php 
